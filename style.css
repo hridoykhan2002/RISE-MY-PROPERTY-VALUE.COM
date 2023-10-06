@@ -1,0 +1,342 @@
+/****************** starup ****************/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&family=Raleway:wght@200;300;400;500&display=swap');
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    transition: all ease-in-out .3s;
+}
+:root{
+    --mainColor: #ee1b24;
+    --mainTextColor: #040404;
+    --headingText: 'Montserrat', sans-serif;
+    --paraText: 'Raleway', sans-serif;
+    --promoBack: #d8d8d8;
+}
+/***************** basic *****************/
+body{
+    scroll-behavior: smooth;
+    height: 200vh;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+body li{
+    list-style: none;
+}
+body h1{
+    font-weight: 600;
+    letter-spacing: 0;
+    font-size: 45px;
+    font-family: var(--headingText);
+}
+body h3{
+    font-family: var(--headingText);
+    font-weight: 600;
+    letter-spacing: 0;
+    font-size: 25px;
+}
+body a{
+    text-decoration: none;
+    font-family: var(--paraText);
+}
+body p{
+    font-family: var(--paraText);
+    letter-spacing: .5px;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    padding: 80px 90px;
+}
+.section-header{
+    margin-bottom: 50px;
+}
+.section-header p{
+    margin-top: 20px;
+}
+/* header */
+/* promo */
+.promo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 80px;
+    background-color: #d8d8d8;
+    color: rgb(65, 65, 65);
+}
+.promoLeft p i{
+    margin-right: 5px;
+}
+.promoRight i {
+    margin-right: 10px;
+}
+/* nav */
+.navData{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 90px;
+}
+.logo{
+    width: 200px;
+}
+.navContent{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.navContent p{
+    font-size: 14px;
+}
+.navContent article{
+    border-right: 1px solid rgb(65, 65, 65);
+    padding: 10px 10px;
+}
+.lastNav{
+    border: none !important;
+}
+.navContent h3{
+    font-size: 14px;
+    margin-top: 5px;
+}
+.navContent a{
+    padding: 15px 30px;
+    background-color: var(--mainColor);
+    color: #fff;
+}
+.navLinks{
+    padding: 19px 100px;
+    background-color: rgb(54, 54, 54);
+}
+.navLinks a{
+    margin-right: 30px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.navActive{
+    padding: 20px !important;
+    background-color: var(--mainColor);
+}
+/* hero */
+.hero{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.753) ,rgba(0, 0, 0, 0.24)) ,url(img/hero1.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 90vh;
+}
+.hero h1{
+    padding-top: 150px;
+    padding-right: 200px;
+    font-size: 70px;
+    text-transform: capitalize;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.hero p{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.herobtn{
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: var(--mainColor);
+    color: #fff;
+    margin-right: 10px;
+}
+.herobtn2{
+    display: inline-block;
+    padding: 13px 28px;
+    border: 2px solid var(--mainColor);
+    color: #fff;
+}
+/* services */
+.serviceData{
+    display: grid;
+    background-color: #f1f1f1;
+    grid-template-columns: 47% 50%;
+    justify-content: space-between;
+}
+.serviceData2{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: var(--mainColor);
+    color: #fff;
+}
+.serviceData2 a{
+    background-color: #fff !important;
+    color: #000 !important;
+}
+.serviceContent2{
+    padding: 40px;
+}
+.serviceContent2 img{
+    height: 100% !important;
+    width: 100%;
+}
+.service h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.service h3{
+    margin-bottom: 20px;
+    font-size: 19px;
+}
+.service a{
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--mainColor);
+    color: #fff;
+    margin-right: 10px;
+}
+/* project */
+.project{
+    padding: 80px 40px 0 40px;
+}
+.projectHeader{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.projectHeader p{
+    color: grey;
+}
+.projectMain{
+    border-bottom: 4px solid var(--mainColor);
+    width: 100%;
+    display: flex;
+    align-items: start;
+    gap: .5rem;
+    margin-bottom: 40px;
+}
+.projectMain a{
+    color: black;
+    padding:15px 20px;
+    font-weight: bold;
+}
+.projectActive{
+    background-color: var(--mainColor) !important;
+    color: #fff !important;
+}
+.projectData article{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 8px 8px 16px rgba(128, 128, 128, 0.329);
+}
+.projectContent{
+    margin-bottom: 30px;
+}
+.projectData article p{
+    font-size: 20px;
+}
+.projectData article p span{
+    font-weight: bold;
+}
+/* review */
+.review{
+    position: relative;
+    padding: 80px;
+    background: linear-gradient(to top, #d3d3d3, #fff);
+}
+.review h1{
+    margin-bottom: 40px;
+    text-align: center;
+}
+.reviewData{
+    display: grid;
+    grid-template-columns: 30% 65%;
+    align-items: center;
+    gap: 5%;
+}
+.review h3{
+    margin-bottom: 30px;
+}
+.review h4{
+    margin-top: 30px;
+    font-family: var(--headingText);
+}
+.review img{
+    height: 300px;
+}
+.aLeft{
+    position: absolute;
+    font-size: 40px;
+    color: var(--mainColor);
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%);
+    margin-top: 20px;
+}
+.aRight{
+    position: absolute;
+    font-size: 40px;
+    color: var(--mainColor);
+    top: 50%;
+    right: 2%;
+    transform: translateY(-50%);
+}
+/* .newslatter */
+.news{
+    padding: 40px 100px;
+    background-color: var(--mainColor);
+    color: #fffF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.news h3{
+    text-transform: uppercase;
+}
+.news a{
+    padding: 15px 30px;
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+}
+/* footer */
+footer{
+
+    background-color: rgb(54, 54, 54);
+    color: #fff;
+}
+.footerContent{    padding: 50px 100px;
+    display: grid;
+    grid-template-columns: 30% 20% 25% 25%;
+    justify-content: center;
+    gap: 2rem;
+}
+.footerData{
+    padding: 30px 60px 0 0;
+}
+.footerIcons i{
+    margin-top: 20px;
+    font-size: 30px;
+    margin-right: 10px;
+}
+footer img{
+    width: 200px;
+    height: auto !important;
+    margin-bottom: 20px;
+}
+footer h3{
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.footerData p{
+    font-size: 16px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: .5rem;
+}
+.copyRight{
+    padding: 10px 140px;
+    background-color: #000;
+}
